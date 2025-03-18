@@ -24,3 +24,6 @@ video element (video of the area)
 - [ ] Mobile design
 - [ ] Desktop design
 - [ ] Accessiblity / Readability
+- [ ] Social Media Icons in the footer
+- [ ] Sticky navbar
+- [ ] 6 facts
