@@ -1,16 +1,16 @@
 # Group Project #1 Gr-10
 
 Pink Water - Santa Clara
+## Planned Sections
+### Intro
 
-## Intro
+### Facts
 
-## Facts
+### Climate Change Section
 
-## Climate Change Section
+### Footer
 
-## Footer
-
-### Topics
+#### Topics
 - why is it pink?
 - why salty? and how salty?
 - what migratory birds are frequently visiting here?
