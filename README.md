@@ -18,6 +18,14 @@ Pink Water - Santa Clara
 - how climate change affected it?
 - what is the plan to lessen the effect of climate change for this place?
 
+#### Color Palette
+Deep Charcoal (#333333) - for texts and some other contrasting elements
+Warm White (#F8F5F2) - for the background
+Blush Pink (#FFC1CC) - for representing the pink water (tentative)
+Soft Blue (#A7C7E7) - idk
+
+#### Font Choice
+
 
 video element (video of the area)
 
@@ -27,3 +35,4 @@ video element (video of the area)
 - [ ] Social Media Icons in the footer
 - [ ] Sticky navbar
 - [ ] 6 facts
+
