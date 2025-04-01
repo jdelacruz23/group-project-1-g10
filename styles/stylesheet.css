@@ -10,8 +10,10 @@ body{
 
 nav{
     background: linear-gradient(0deg, #A7C7E7 0%, rgba(196, 197, 222, 0.45) 0.01%, rgba(255, 193, 204, 0.9) 100%);
-    height: 100px;
+    height: 5em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
 }
 
 /* Styles for the navigation links "Home Menu Contact"*/
@@ -19,16 +21,16 @@ nav{
     display: flex;
     list-style: none;
     text-align: right;
-    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
     /* The z-index for the nav-menu is like so that it will stay on top of everything */
     z-index: 99999;
     position: fixed;
     /*the menu will come from the right*/
     right: -100%;
-    top: 90px;
-    gap: 1.5rem;
-    flex-direction: column;
-    align-items: center;
+    top: 80px;
+    gap: 3.5rem;
     background-color: #262626;
     width: 100%;
     transition: 0.3s;
@@ -46,12 +48,12 @@ nav{
     font-size: 1.1rem;
 }
 
-#main-nav ul li a:hover {
+/* #main-nav ul li a:hover {
     transition: color .2s;
-}
+} */
 
 /* Creates a line below the links fades in at hovering and out when not */
-#main-nav ul li a::before {
+/* #main-nav ul li a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -71,33 +73,32 @@ nav{
 
 #main-nav ul li a:active {
     color: #d11322;
-}
+} */
 
 
 /** START OF HAMBURGER BUTTON FOR COLLAPSIBLE NAVBAR **/
 /* Contains the actual hamburger button*/
 .hamburger-btn {
     position: absolute;
-    right: 2rem;
+    right: 1.5rem;
     cursor: pointer;
 }
-
-
 
 .bar {
     display: block;
     width: 1.8rem;
     height: .2rem;
-    margin: .5em;
-    border-radius: 5px;
+    margin: .4em;
+    border-radius: 15px;
     transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     background-color: black;
+    caret-color: transparent;
 }
 
 
 .hamburger-btn.active .bar:nth-child(1) {
     transform-origin: bottom;
-    transform: rotateZ(45deg) translateX(5px)translateY(5px);
+    transform: rotateZ(45deg) translateX(3px)translateY(4px);
 }
 
 .hamburger-btn.active .bar:nth-child(2) {
@@ -110,6 +111,8 @@ nav{
 
 .hamburger-btn.active .bar:nth-child(3) {
     transform-origin: bottom;
-    transform: rotateZ(-45deg) translateX(12px)translateY(-10px);
+    transform: rotateZ(-45deg) translateX(11px)translateY(-9.5px);
 }
 /** END OF HAMBURGER BUTTON FOR COLLAPSIBLE NAVBAR **/
+
+
