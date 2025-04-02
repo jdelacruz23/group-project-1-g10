@@ -71,8 +71,7 @@
     }
 
     .menu ul li:hover {
-        background-color: 
-#f0f0f0;
+        background-color: #f0f0f0;
     }
 
     footer {
@@ -91,11 +90,14 @@
     } 
 
     .search-icon {
+        position: absolute;
+        top: 0;
+        right: 1.25rem;
+
         cursor: pointer;
         z-index: 10;
-        position: relative;
         display: flex;
-        align-items: center;
+        align-items: left;
     }
 
     .search-bar {
