@@ -103,35 +103,35 @@
         align-items: left;
     }
 
+
     .search-bar {
-        position: absolute;
+        position: inherit;
         top: 50px;
-        right: 20px;
+        right: 2px;
         background: white;
         border-radius: 5px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         width: 0;
-        height: 40px;
-        overflow: hidden;
+        height: 30px;
+        overflow:visible;
         opacity: 0;
 
     }
 
     /* When the search bar is active, expand it */
     .search-bar.active {
-        width: 250px;
+        width: 200px;
         padding: 8px;
         opacity: 1;
     }
 
     .search-bar input {
-        width: 100%;
+        width: 95%;
         padding: 5px;
         border: 1px solid #ddd;
         border-radius: 5px;
         outline: none;
     }
-}
 
 
 
