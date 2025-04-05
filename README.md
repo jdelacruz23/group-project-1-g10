@@ -26,9 +26,6 @@ Pink Water - Santa Clara
 
 #### Font Choice
 
-* Baskerville 
-* Nunito Sans
-
 
 video element (video of the area)
 
