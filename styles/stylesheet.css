@@ -349,11 +349,13 @@ footer .socials img {
 }
 
 
-/* For Desktop View */
+
+
+
 @media screen and (min-width: 600px) {
     /* Content Margins*/
     main {
-        margin: 28% ;
+        margin: 27% ;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -361,9 +363,6 @@ footer .socials img {
         width: 400px;
         height: 500px;
 
-    }
-    .slide{
-        height: 100%;
     }
 
 
