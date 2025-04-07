@@ -33,3 +33,27 @@ Pink Water - Santa Clara
 - [x] Social Media Icons in the footer
 - [x] Sticky navbar
 - [x] fun facts
+
+
+### Attributions
+
+iridial - https://unsplash.com/@iridial_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+gulls
+
+Ray Hennessy - https://unsplash.com/@rayhennessy
+shorebird
+
+Jim - https://unsplash.com/@iqsphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+waterfowl
+
+David Clode - https://unsplash.com/@davidclode?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+Pelicans
+
+Chris J Walker - https://unsplash.com/@braxted?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+Terns
+
+Agami Photo Agency, Shutterstock 
+https://abcbirds.org/wp-content/uploads/2022/03/BOTW-featured-image_Red-Phalarope-female-by-Agami-Photo-Agency-Shutterstock-1024x663.jpg
+
+Phalaropes
+Red Phalarope (female) by Agami Photo Agency, Shutterstock
