@@ -2,48 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink Water | Santa Clara</title>
-    <link rel="icon" href="assets/water-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/stylesheet.css" />
-    <script src="js/index.js" defer></script>
+    <link rel="icon" href="assets/water-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav class="main-nav" role="navigation">
+        <nav class="main-nav">
             <div class="logo">
                 <a title="Site logo; click to go back to home" href="index.html">
-                    <img src="assets/water-logo.png" alt="Website Logo" />
-                    <span class="site-title">Pink Water<br />Santa Clara</span>
+                    <img src="./assets/water-logo.png" alt="Website Logo">
+                    <span class="site-title">Pink Water<br>Santa Clara</span>
                 </a>
             </div>
-               <ul id="nav-menu" class="nav-menu">
-                <div class="search-container">
-                    <label for="search-bar" class="sr-only">Search</label>
-                    <input id="search-bar" class="search-bar" type="text" placeholder="Search..." />
-                    <span><img class="search-icon" src="assets/Search.png" alt="Search" /></span>
+
+            <div class="nav-menu">
+                <div class="search-container-mobile">
+                    <label for="search" class="visually-hidden">Search</label>
+                    <input id="search" class="search-bar" type="text" placeholder="Search...">
+                    <button class="search-button"><span><img class="search-icon" src="./assets/Search.png" alt="Search"></span></button>
                 </div>
-                <li>
-                    <a class="nav-link" title="Go back to the homepage" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="nav-link" title="Plan your visit" href="#">Visit Us!</a>
-                </li>
-                <li>
-                    <a class="nav-link" title="News & Update about the Pond" href="#">News & Updates</a>
-                </li>
-                <li>
-                    <a class="nav-link" title="Frequently Asked Questions" href="#">FAQ</a>
-                </li>
-                <li>
-                    <a class="nav-link" title="Contact Us!" href="#">Contact</a>
-                </li>
-                <li>
-                    <a class="nav-link" title="Donate to our causes" href="#">Donate</a>
-                </li>
-            </ul>
+               <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" title="Go back to the homepage" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Plan your visit" href="#">Visit Us!</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="News & Update about the Pond" href="#">News & Updates</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Frequently Asked Questions" href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Contact Us!" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" title="Donate to our causes" href="#">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Desktop Search Bar, please have this enabled when Desktop viewport is activated-->
+            <div class="search-container-desktop">
+                <label for="search" class="visually-hidden">Search</label>
+                <input id="search" class="search-bar" type="text" placeholder="Search...">
+                <button class="search-button"><span><img class="search-icon" src="./assets/Search.png" alt="Search"></span></button>
+            </div>
 
             <!-- Hamburger button for clicking on mobile viewports -->
             <div class="hamburger-btn">
@@ -57,7 +66,7 @@
     <main>
         <h1 class="heading">Santa Clara A12 Pond’s Crisis</h1>
         <div id="hero-image-container" class="img-container">
-            <img class="hero-image" src="assets/pond-img.jpg" alt="Picture of the A12 Pond">
+            <img class="hero-image" src="./assets/pond-img.jpg" alt="Picture of the A12 Pond">
         </div>
 
         <div class="site-content intro">
@@ -72,94 +81,97 @@
                 enhancing the vibrant pink coloration.
             </p>
         </div>
+        <div class="container-grid">
+            <div class="site-content fun-fact grid-item-birds">
+                <h3 class="heading">Fun Fact:</h3>
+                <section class="carousel-container" aria-label="Photos of birds that Migrate">
+                    <div class="carousel" data-carousel>
+                        <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+                        <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+                        <ul data-slides>
+                        <li class="slide" data-active>
+                            <img class="carousel-img" src="./assets/shorebird.jpg" alt="Shorebird">
+                        </li>
+                        <li class="slide">
+                            <img class="carousel-img" src="./assets/gulls.jpg" alt="Gulls">
+                        </li>
+                        <li class="slide">
+                            <img class="carousel-img" src="./assets/waterfowl.jpg" alt="Waterfowl">
+                        </li>
+                        <li class="slide">
+                            <img class="carousel-img" src="./assets/pelicans.jpg" alt="Pelicans">
+                        </li>
+                        <li class="slide">
+                            <img class="carousel-img" src="./assets/terns.jpg" alt="Terbs">
+                        </li>
+                        <li class="slide">
+                            <img
+                            class="carousel-img"
+                            src="https://abcbirds.org/wp-content/uploads/2022/03/BOTW-featured-image_Red-Phalarope-female-by-Agami-Photo-Agency-Shutterstock-1024x663.jpg"
+                            alt="Phalaropes">
+                        </li>
+                        </ul>
+                    </div>
+                </section>
+                <p>
+                    Salt ponds have the highest concentration of birds in winter. Shorebirds begin migrating into the area
+                    in
+                    late July and migration continues through October. Gulls start trickling in around late August and
+                    Waterfowl
+                    start arriving in September. Most of these birds will return to their breeding grounds in the spring.
+                    Visit
+                    in summer for Pelicans, Terns and Phalaropes.
+                </p>
+            </div>
+            
 
-        <div class="site-content fun-fact">
-            <h3 class="heading">Fun Fact:</h3>
-            <section class="carousel-container" aria-label="Photos of birds that Migrate">
-                <div class="carousel" data-carousel>
-                    <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
-                    <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
-                    <ul data-slides>
-                      <li class="slide" data-active>
-                        <img class="carousel-img" src="assets/shorebird.jpg" alt="Shorebird">
-                      </li>
-                      <li class="slide">
-                        <img class="carousel-img" src="assets/gulls.jpg" alt="Gulls">
-                      </li>
-                      <li class="slide">
-                        <img class="carousel-img" src="assets/waterfowl.jpg" alt="Waterfowl">
-                      </li>
-                      <li class="slide">
-                        <img class="carousel-img" src="assets/pelicans.jpg" alt="Pelicans">
-                      </li>
-                      <li class="slide">
-                        <img class="carousel-img" src="assets/terns.jpg" alt="Terbs">
-                      </li>
-                      <li class="slide">
-                        <img
-                          class="carousel-img"
-                          src="https://abcbirds.org/wp-content/uploads/2022/03/BOTW-featured-image_Red-Phalarope-female-by-Agami-Photo-Agency-Shutterstock-1024x663.jpg"
-                          alt="Phalaropes">
-                      </li>
-                    </ul>
-                  </div>
-            </section>
-            <p>
-                Salt ponds have the highest concentration of birds in winter. Shorebirds begin migrating into the area
-                in
-                late July and migration continues through October. Gulls start trickling in around late August and
-                Waterfowl
-                start arriving in September. Most of these birds will return to their breeding grounds in the spring.
-                Visit
-                in summer for Pelicans, Terns and Phalaropes.
-            </p>
-        </div>
+                <div class="site-content saltiness grid-item-saltiness">
+                    <h2 class="heading">Why Is Salt There?</h2>
+                    <p class="main-content">
+                        The U.S. Fish and Wildlife Service manages ponds near Alviso Slough for
+                        migratory and resident birds, normally circulating bay water through
+                        them. However, due to levee construction for the South San Francisco Bay
+                        Shoreline Project starting in 2021, water levels were kept low, and some
+                        ponds, like Pond A12, weren’t replenished. As a result, they became
+                        saltier and turned pink due to evaporation—illustrating how salt is
+                        naturally produced. In cases like this, salinity can exceed 100 parts
+                        per thousand—much higher than the ocean’s 35 ppt—creating hypersaline
+                        conditions that support salt-loving microbes like Halobacteria and
+                        Dunaliella salina, which give the water its pink color.
+                    </p>
+                </div>
+        
 
-        <div class="site-content saltiness">
-            <h2 class="heading">Why Is Salt There?</h2>
-            <p class="main-content">
-                The U.S. Fish and Wildlife Service manages ponds near Alviso Slough for
-                migratory and resident birds, normally circulating bay water through
-                them. However, due to levee construction for the South San Francisco Bay
-                Shoreline Project starting in 2021, water levels were kept low, and some
-                ponds, like Pond A12, weren’t replenished. As a result, they became
-                saltier and turned pink due to evaporation—illustrating how salt is
-                naturally produced. In cases like this, salinity can exceed 100 parts
-                per thousand—much higher than the ocean’s 35 ppt—creating hypersaline
-                conditions that support salt-loving microbes like Halobacteria and
-                Dunaliella salina, which give the water its pink color.
-            </p>
-        </div>
-
-        <div class="site-content crisis">
-            <h2 class="heading">The Climate Crisis</h2>
-            <p class="main-content">
-                Pond A12, part of the Don Edwards San Francisco Bay National Wildlife
-                Refuge, faces significant challenges due to climate change, particularly
-                from sea-level rise. Rising sea levels threaten to submerge vital
-                wetland habitats, which are essential for migratory and resident bird
-                species, including the threatened western snowy plover. This potential
-                inundation could lead to habitat loss and increased salinity, adversely
-                affecting the pond's delicate ecosystem. ​ To address these threats, the
-                South San Francisco Bay Shoreline Project aims to reduce coastal flood
-                risks and restore tidal marsh habitats. This initiative includes
-                constructing FEMA-certifiable levees and implementing measures to adapt
-                to sea-level changes, thereby enhancing the resilience of areas like
-                Pond A12 against climate-induced challenges. ​ U.S. Fish and Wildlife
-                Service Visitors are advised to stay on designated trails, avoid
-                approaching the pond’s edge, and refrain from using drones to prevent
-                disturbing the wildlife.
-            </p>
+            <div class="site-content crisis grid-item-crisis">
+                <h2 class="heading">The Climate Crisis</h2>
+                <p class="main-content">
+                    Pond A12, part of the Don Edwards San Francisco Bay National Wildlife
+                    Refuge, faces significant challenges due to climate change, particularly
+                    from sea-level rise. Rising sea levels threaten to submerge vital
+                    wetland habitats, which are essential for migratory and resident bird
+                    species, including the threatened western snowy plover. This potential
+                    inundation could lead to habitat loss and increased salinity, adversely
+                    affecting the pond's delicate ecosystem. ​ To address these threats, the
+                    South San Francisco Bay Shoreline Project aims to reduce coastal flood
+                    risks and restore tidal marsh habitats. This initiative includes
+                    constructing FEMA-certifiable levees and implementing measures to adapt
+                    to sea-level changes, thereby enhancing the resilience of areas like
+                    Pond A12 against climate-induced challenges. ​ U.S. Fish and Wildlife
+                    Service Visitors are advised to stay on designated trails, avoid
+                    approaching the pond’s edge, and refrain from using drones to prevent
+                    disturbing the wildlife.
+                </p>
+            </div>
         </div>
 
         <div class="site-content warning-box">
             <h2 class="heading" id="rules-heading">
                 <span class="halt-sign">
-                    <img src="assets/halt-img.png" alt="Halt Sign">
+                    <img src="./assets/halt-img.png" alt="Halt Sign">
                 </span>
                 <span class="rules-heading-text">Before you visit, please note our rules.</span>
             </h2>
-            <img class="site-image" src="assets/pond-visitor.png" alt="Visitors near the pond">
+            <img class="site-image" src="./assets/pond-visitor.png" alt="Visitors near the pond">
             <ul>
                 <li class="main-content rules"><span class="rule-emphasis">Don’t</span> leave designated trails</li>
                 <li class="main-content rules"><span class="rule-emphasis">Don’t</span> approach the pond’s edge</li>
@@ -171,28 +183,45 @@
     </main>
 
     <footer>
-
-        <div class="footer-nav">
+        <h4 class="grid-site-title">Pink Water - Santa Clara</h4>
+        <div class="footer-nav grid-nav-links">
             <!-- New Nav Links Section -->
             <ul class="footer-nav-menu">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Visit Us!</a></li>
-                <li><a class="nav-link" href="#">News & Updates</a></li>
-                <li><a class="nav-link" href="#">FAQ</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
-                <li><a class="nav-link" href="#">Donate</a></li>
+                <li><a class="footer-nav-link" href="#">Home</a></li>
+                <li><a class="footer-nav-link" href="#">Visit Us!</a></li>
+                <li><a class="footer-nav-link" href="#">News & Updates</a></li>
+                <li><a class="footer-nav-link" href="#">FAQ</a></li>
+                <li><a class="footer-nav-link" href="#">Contact</a></li>
+                <li><a class="footer-nav-link" href="#">Donate</a></li>
             </ul>
         </div>
-               <!-- Socials & Copyright -->
-               <div class="socials">
-                <h3>Follow Us</h3>
-                <img src="assets/Button-List.png" alt="Social Media List">
-             </div>
-    
-
-            <div class="footer-copyright">
-                &copy; 2025 SantaClaraClimateCrisis
-            </div>
-        
+        <div class="social-media-container grid-social-media">
+                <h4>Follow Us On:</h4>
+                <ul>
+                    <li class="social-media-links">
+                        <a href="https://www.facebook.com/">
+                            <span><img src="./assets/icons8-facebook-30.png" alt="Facebook Icon"></span>
+                        </a>
+                    </li>
+                    <li class="social-media-links">
+                        <a href="https://www.instagram.com/">
+                            <span><img src="./assets/icons8-instagram-30.png" alt="Instagram Icon"></span>
+                        </a>
+                    </li>
+                    <li class="social-media-links">
+                        <a href="https://x.com/">
+                            <span><img src="./assets/icons8-twitter-30.png" alt="X/Twitter Icon"></span>
+                        </a>
+                    </li>
+                    <li class="social-media-links">
+                        <a href="https://www.linkedin.com/">
+                            <span><img src="./assets/icons8-linkedin-30.png" alt="LinkedIn Icon"></span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer-copyright grid-copyright">
+            <p>&copy; 2025 SFSU | Jerome & Galvin | Group-10</p>
+        </div>
     </footer>
 </html>
